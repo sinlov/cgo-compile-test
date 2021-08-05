@@ -51,6 +51,8 @@ GOGCCFLAGS="-fPIC -arch x86_64 -m64 -pthread -fno-caret-diagnostics -Qunused-arg
 
 ## cgo build error
 
+- [github/golang/go/issues/47546](https://github.com/golang/go/issues/47546)
+
 - error ar
 
 ```bash
