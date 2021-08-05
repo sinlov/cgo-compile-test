@@ -1,0 +1,18 @@
+# copy right
+# Licenses http://www.apache.org/licenses/LICENSE-2.0
+# more info see https://docs.docker.com/compose/compose-file/ or https://docker.github.io/compose/compose-file/
+version: '3.7'
+
+networks:
+  default:
+#volumes:
+#  web-data:
+
+services:
+  golang-compile-base:
+    container_name: '${ROOT_DOCKER_CONTAINER}'
+    image: '${ROOT_DOCKER_IMAGE_NAME}:${ROOT_DOCKER_IMAGE_TAG}' # see local build file
+    volumes:
+      - "$PWD:/usr/src/myapp"
+    working_dir: "/usr/src/myapp"
+    command: ["make"]
