@@ -17,6 +17,7 @@ cgoBuildDarwinAmd64: clean
 	-o test.a
 	@echo ""
 	file test.a
+	objdump -a test.a
 
 cgoCC: cgoBuildDarwinAmd64
 	cc -c -o testc.o test.c
