@@ -63,7 +63,7 @@ test.a: current ar archive
 
 - want ar
 
-```bash
+```bashg
 $ make
 ...
 
